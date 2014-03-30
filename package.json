@@ -1,0 +1,29 @@
+{
+  "name": "gulp-boilerplate",
+  "version": "0.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jfroffice/gulp-boilerplate.git"
+  },
+  "author": "jfroffice",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jfroffice/gulp-boilerplate/issues"
+  },
+  "homepage": "https://github.com/jfroffice/gulp-boilerplate",
+  "dependencies": {
+    "gulp": "~3.6.0",
+    "gulp-jshint": "~1.5.1",
+    "gulp-livereload": "~1.2.0",
+    "gulp-open": "~0.2.8",
+    "gulp-sass": "~0.7.1",
+    "node-static": "~0.7.3",
+    "gulp-util": "~2.2.14",
+    "tiny-lr": "~0.0.5"
+  }
+}

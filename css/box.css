@@ -1,0 +1,11 @@
+.circle {
+  box-sizing: border-box;
+  background-color: #F78;
+  position: absolute;
+  top: calc(50% - 40px);
+  left: calc(50% - 40px);
+  width: 80px;
+  border-radius: 40px;
+  border: 2px solid white;
+  box-shadow: 0 0 5px #333;
+  height: 80px; }

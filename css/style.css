@@ -1,0 +1,15 @@
+body {
+	padding: 0 50px;
+	color: #333;
+	font: 52px Arial, sans-serif	
+}
+
+.container {
+	width: 501px;
+	box-sizing: border-box; 
+	margin: 0 auto;
+}
+
+p {
+	text-align: center;
+}
