@@ -5,7 +5,6 @@ var gulp = require("gulp"),
 	sass = require('gulp-sass'),
 	livereload = require('gulp-livereload'),
 	open = require("gulp-open"),
-	clean = require('gulp-clean'),
 	port = 80;
 
 gulp.task('hint', function() {
@@ -74,6 +73,7 @@ var uglify = require('gulp-uglify');
 var minifyHtml = require('gulp-minify-html');
 var minifyCss = require('gulp-minify-css');
 var rev = require('gulp-rev');
+var clean = require('gulp-clean');
 
 gulp.task('image', function () {
     gulp.src('img/{*.png,*.jpg, *.gif}')
