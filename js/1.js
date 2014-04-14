@@ -1,3 +1,2 @@
 var a="1";
-
-console.log('123456');
+console.log('12345');

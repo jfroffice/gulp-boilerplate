@@ -7,13 +7,13 @@ var gulp = require("gulp"),
 	open = require("gulp-open"),
 	port = 80;
 
-gulp.task('hint', function() {
+gulp.task('jshint', function() {
 	return gulp.src('js/*.js')
 	.pipe(jshint())
 	.pipe(jshint.reporter('default'));
 });
 
-gulp.task('lint', function() {
+gulp.task('csslint', function() {
   gulp.src('css/*.css')
     .pipe(csslint('csslintrc.json'))
     .pipe(csslint.reporter());
@@ -52,12 +52,13 @@ gulp.task('default', ['connect', 'launch'], function() {
 
 	var server = livereload();
 
-	gulp.watch('js/*.js', ['hint'], function(file) {
+	gulp.watch('js/*.js', ['jshint'], function(file) {
+		gulp.run('jshint');		
 		server.changed(file.path);
 	}); 
 	gulp.watch('scss/*.scss', ['sass']);
 	gulp.watch('css/*.css').on('change', function(file) {
-		gulp.run('lint');		
+		gulp.run('csslint');		
 		server.changed(file.path);		
 	});
 
@@ -65,32 +66,3 @@ gulp.task('default', ['connect', 'launch'], function() {
 		server.changed(file.path);
 	});
 });
-
-/*
-var	imagemin = require('gulp-imagemin');
-var usemin = require('gulp-usemin');
-var uglify = require('gulp-uglify');
-var minifyHtml = require('gulp-minify-html');
-var minifyCss = require('gulp-minify-css');
-var rev = require('gulp-rev');
-var clean = require('gulp-clean');
-
-gulp.task('image', function () {
-    gulp.src('img/{*.png,*.jpg, *.gif}')
-        .pipe(imagemin())        
-        .pipe(gulp.dest('dist/img'))
-        .pipe(rev());
-});
-
-gulp.task('clean', function () {
-    gulp.src('dist', {read: false})
-        .pipe(clean());
-});
-
-gulp.task('usemin', function() {
-  gulp.src('./*.html')
-    .pipe(usemin({}))
-    .pipe(gulp.dest('dist/'));
-});
-
-gulp.task('dist', ['clean', 'usemin', 'image']);*/
