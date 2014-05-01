@@ -4,6 +4,18 @@ gulp-boilerplate
 v0.2.0
 ------
 
+Install
+-------
+```
+npm install
+```
+
+Launch
+------
+```
+gulp
+```
+
 support
 -------
 - csslint
@@ -13,7 +25,3 @@ support
 - open
 - watch
 - livereload
-
-remarks
--------
-as now usemin gulp support is not ready
