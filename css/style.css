@@ -2,12 +2,11 @@ body {
 	padding: 0 50px;
 	color: #333;
 	font: 54px Arial, sans-serif;
-	background-color: #FFF;	 
+	background-color: #FFF;	 	 
 }
 
 .container {
-	width: 501px;
-	box-sizing: border-box; 
+	width: 500px;
 	margin: 0 auto;
 }
 

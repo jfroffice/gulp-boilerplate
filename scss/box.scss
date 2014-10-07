@@ -1,16 +1,15 @@
-$mycolor: #F72;
-$size: 200;
+$mycolor: #fff200;
+$size: 40;
 $size_2: #{$size/2};
 
 .circle {
-	box-sizing: border-box; 
 	background-color: $mycolor;
 	position: absolute;
-	top: calc(50% - #{$size_2}px);
-	left: calc(50% - #{$size_2}px);
+	top: calc(28% - #{$size_2}px);
+	left: calc(61% - #{$size_2}px);
 	border-radius: #{$size_2}px;
-	border: 2px solid white;
-	box-shadow: 0 0 5px #333;
+	border: 3px solid white;
+	box-shadow: 0 0 2px #333;
 	width: #{$size}px;
 	height: #{$size}px;
 }

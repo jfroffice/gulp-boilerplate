@@ -1,7 +1,7 @@
 gulp-boilerplate
 ================
 
-v0.2.0
+v0.2.1
 ------
 
 Install
@@ -20,8 +20,7 @@ support
 -------
 - csslint
 - jshint
-- connect (similar as grunt)
+- connect
 - sass
-- open
 - watch
 - livereload
